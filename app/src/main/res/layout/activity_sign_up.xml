@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rdsingh.SignUpActivity">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lNameTF"
+        android:inputType="textPersonName"
+        android:hint="Student ID"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/studentIdTF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/studentIdTF"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/fNameTF"
+        app:layout_constraintTop_toBottomOf="@+id/studentIdTF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/fNameTF"
+        app:layout_constraintBottom_toTopOf="@+id/emailTF"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/lNameTF"
+        app:layout_constraintTop_toBottomOf="@+id/studentIdTF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/lNameTF"
+        android:inputType="textPersonName"
+        android:hint="Grade"
+        android:ems="10"
+        android:id="@+id/gradeTF"
+        app:layout_constraintTop_toBottomOf="@+id/lNameTF"/>
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/gradeTF"
+        app:layout_constraintBottom_toTopOf="@+id/rePswdTF"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:ems="10"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/emailTF"
+        app:layout_constraintTop_toBottomOf="@+id/lNameTF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/emailTF"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/pswdTF"
+        app:layout_constraintTop_toBottomOf="@+id/emailTF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/pswdTF"
+        app:layout_constraintBottom_toTopOf="@+id/submitRegBtn"
+        android:inputType="textPassword"
+        android:hint="Re-type Password"
+        android:ems="10"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/rePswdTF"
+        app:layout_constraintTop_toBottomOf="@+id/emailTF"/>
+
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="94dp"
+        android:id="@+id/submitRegBtn"
+        app:layout_constraintTop_toBottomOf="@+id/rePswdTF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Confirm"
+        android:background="@drawable/btn_shape"/>
+
+
+</android.support.constraint.ConstraintLayout>

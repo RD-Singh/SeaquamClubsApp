@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+
+    <string-array name="recyclerViewArray">
+        <item>blank</item>
+    </string-array>
+
+    <string-array name="spinnerItems">
+    <item>Select One</item>
+    <item>Zamar</item>
+    <item>Reece</item>
+    <item>Rippy</item>
+
+
+</string-array>
+
+</resources>
